@@ -1,32 +1,65 @@
 /* Write your CSS here */
+@media screen and (min-width: 768px) {
+  .team-card {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    border-radius: 7px;
 
-.team-card {
-  display: flex;
-  align-items: center;
-  border: 1px solid #ffffff;
-  background-color: transparent;
-  border-radius: 7px;
-
-  flex-grow: 0;
-  flex-shrink: 0;
-  margin: 10px;
-  padding: 5px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin: 10px;
+    padding: 5px;
+  }
+  .team-logo {
+    height: 140px;
+    width: 140px;
+    margin: 4px;
+  }
+  .team-name {
+    font-weight: bold;
+    font-size: 24px;
+    font-family: 'bree serif';
+    color: #ffffff;
+    padding-left: 7px;
+  }
+  .nav-link {
+    cursor: pointer;
+    outline: none;
+    width: 48%;
+    text-decoration: none;
+  }
 }
-.team-logo {
-  height: 140px;
-  width: 140px;
-  margin: 4px;
-}
-.team-name {
-  font-weight: bold;
-  font-size: 24px;
-  font-family: 'bree serif';
-  color: #ffffff;
-  padding-left: 7px;
-}
-.nav-link {
-  cursor: pointer;
-  outline: none;
-  width: 48%;
-  text-decoration: none;
+@media screen and (max-width: 767px) {
+  .team-card {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    border-radius: 7px;
+    width: 96%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin: 10px;
+    padding: 7px;
+  }
+  .team-logo {
+    height: 50px;
+    width: 50px;
+    margin: 4px;
+  }
+  .team-name {
+    font-weight: bold;
+    font-size: 14px;
+    font-family: 'bree serif';
+    color: #ffffff;
+    padding-left: 7px;
+  }
+  .nav-link {
+    cursor: pointer;
+    outline: none;
+    width: 48%;
+    text-decoration: none;
+  }
 }
